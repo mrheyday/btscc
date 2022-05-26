@@ -191,7 +191,7 @@ contract("FuzzyTest", async accounts=>{
     }
     function getAccountInfo(account_index){
         let info = gAccountsInfo[account_index];
-        if (info ==null){
+        if (info ===null){
             gAccountsInfo[account_index] = {
                 index:account_index,
                 balance:0,
